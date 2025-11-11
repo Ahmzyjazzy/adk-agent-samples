@@ -1,0 +1,12 @@
+[project]
+name = "adk-agent-samples"
+version = "0.1.0"
+description = "ADK agent samples demonstrating various use cases."
+authors = [
+    { name = "Ahmzy Codelabs LLC", email = "contact@ahmzycodelabs.dev" },
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=1.18.0",
+]
