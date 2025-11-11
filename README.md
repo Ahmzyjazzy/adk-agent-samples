@@ -26,6 +26,8 @@ This project contains practical examples of how to create and configure agents u
 - **Python**: 3.11 or higher
 - **Google ADK**: >= 1.18.0
 
+> **Windows Users**: Please follow our [Windows Setup Guide](windows-setup.md) for detailed instructions on installing Make and uv.
+
 ## Installation
 
 This project uses [uv](https://docs.astral.sh/uv/) for fast and reliable Python package management.
