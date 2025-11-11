@@ -6,25 +6,36 @@ A collection of sample applications demonstrating the capabilities of the Google
 
 This project contains practical examples of how to create and configure agents using the Google ADK framework. Each sample demonstrates different features and use cases for building AI-powered applications.
 
+### Quick Reference Table
+
+| Pattern | When to Use | Example | Key Feature |
+|---------|-------------|---------|-------------|
+| **LLM-based (sub_agents)** | Dynamic orchestration needed | Research + Summarize | LLM decides what to call |
+| **Sequential** | Order matters, linear pipeline | Outline → Write → Edit | Deterministic order |
+| **Parallel** | Independent tasks, speed matters | Multi-topic research | Concurrent execution |
+| **Loop** | Iterative improvement needed | Writer + Critic refinement | Repeated cycles |
+
 ## Project Structure
 
 ```
 .
-├── basic-agent/          # Basic agent example
-│   ├── agent.py          # Agent configuration and setup
-│   └── __init__.py
-├── multi-agent/          # Multi-agent orchestration example
-│   ├── agent.py          # Root coordinator
+├── basic-agent/              # Basic agent example (single Gemini agent + google_search)
+│   ├── agent.py              # Agent configuration and setup
 │   ├── __init__.py
+│   └── README.md             # Detailed guide
+├── multi-agent/              # LLM orchestrator pattern (root agent calls sub-agents as tools)
+│   ├── agent.py
+│   ├── __init__.py
+│   ├── README.md
 │   └── sub_agents/
-│       ├── research_agent/
-│       │   └── agent.py
-│       └── summarizer_agent/
-│           └── agent.py
-├── main.py               # Main entry point
-├── pyproject.toml        # Project configuration
-├── Makefile              # Build and run commands
-└── README.md             # This file
+├── multi-agent-sequential/   # Sequential pipeline pattern (outline → write → edit)
+├── multi-agent-parallel/     # Parallel pattern (concurrent research + aggregation)
+├── multi-agent-loop/         # Loop/refinement pattern (iterative critic + refiner)
+├── config.py                 # Shared retry configuration
+├── main.py                   # Main entry point
+├── pyproject.toml            # Project configuration
+├── Makefile                  # Build and run commands
+└── README.md                 # This file
 ```
 
 ## Requirements
