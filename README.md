@@ -12,7 +12,6 @@ This project contains practical examples of how to create and configure agents u
 .
 ├── basic-agent/          # Basic agent example
 │   ├── agent.py          # Agent configuration and setup
-│   ├── util.py           # Utility functions
 │   └── __init__.py
 ├── main.py               # Main entry point
 ├── pyproject.toml        # Project configuration
