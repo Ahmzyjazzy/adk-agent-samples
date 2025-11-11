@@ -13,6 +13,14 @@ This project contains practical examples of how to create and configure agents u
 ├── basic-agent/          # Basic agent example
 │   ├── agent.py          # Agent configuration and setup
 │   └── __init__.py
+├── multi-agent/          # Multi-agent orchestration example
+│   ├── agent.py          # Root coordinator
+│   ├── __init__.py
+│   └── sub_agents/
+│       ├── research_agent/
+│       │   └── agent.py
+│       └── summarizer_agent/
+│           └── agent.py
 ├── main.py               # Main entry point
 ├── pyproject.toml        # Project configuration
 ├── Makefile              # Build and run commands

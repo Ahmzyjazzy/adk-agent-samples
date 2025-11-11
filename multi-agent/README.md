@@ -100,8 +100,7 @@ print(resp)
 ```
 
 Notes:
-- Ensure Google credentials are available for the ADK and any tools that call external services (e.g., `GOOGLE_APPLICATION_CREDENTIALS`).
-- Because the root agent orchestrates tools/agents, logging and careful instruction design help debug orchestration flows.
+- To obtain your `GOOGLE_API_KEY` go to [AI Studio](https://aistudio.google.com/api-keys) to create one
 
 ## Tips
 
